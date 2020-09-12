@@ -33,21 +33,26 @@ function HomeLoan() {
 
   function handleInterestRate(event) {
     setInterestRate(event.target.value);
+    calculate(event);
   }
   function handleHomeLoanSlider(event, value) {
     setHomeLoanAmount(value);
+    calculate(event);
   }
 
   function handleInterestRateSlider(event, value) {
     setInterestRate(value);
+    calculate(event);
   }
 
   function handleTenureSlider(event, value) {
     setTenure(value);
+    calculate(event);
   }
 
   function handletenure(event) {
     setTenure(event.target.value);
+    calculate(event);
   }
 
   
@@ -154,7 +159,7 @@ function HomeLoan() {
             marks={true}
             valueLabelDisplay="on"
           />
-          <button className="submit">calculate</button>
+        {/*---<button className="submit">calculate</button>---*/}
         </form>
       </div>
 
